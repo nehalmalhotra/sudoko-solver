@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1">
+        <h1 >Sudoku Solver</h1>
+    </div>
+    <div id="cnt2" class="container2">
+        <div id="gridy">
+            <div class="grd1">
+                <div class="grd2"><input type="number"  id = ".01"></div>
+                <div class="grd2"><input type="number" id =  ".02" ></div>
+                <div class="grd2"><input type="number"  id = ".03"></div>
+                <div class="grd2"><input type="number"  id = ".11"></div>
+                <div class="grd2"><input type="number"  id = ".12"></div>
+                <div class="grd2"><input type="number"  id = ".13"></div>
+                <div class="grd2"><input type="number"  id = ".21"></div>
+                <div class="grd2"><input type="number"  id = ".22"></div>
+                <div class="grd2"><input type="number"  id = ".23"></div>
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number" id=".04" ></div>
+                <div class="grd2"><input type="number" id=".05" ></div>
+                <div class="grd2"><input type="number" id=".06" ></div>
+                <div class="grd2"><input type="number" id=".14" ></div>
+                <div class="grd2"><input type="number" id=".15" ></div>
+                <div class="grd2"><input type="number" id=".16" ></div>
+                <div class="grd2"><input type="number" id=".24" ></div>
+                <div class="grd2"><input type="number" id=".25" ></div>
+                <div class="grd2"><input type="number" id=".26" ></div>
+            </div>
+
+            <div class="grd1">
+                <div class="grd2"><input type="number" id=".07" ></div>
+                <div class="grd2"><input type="number" id=".08" ></div>
+                <div class="grd2"><input type="number" id=".09" ></div>
+                <div class="grd2"><input type="number" id=".17" ></div>
+                <div class="grd2"><input type="number" id=".18" ></div>
+                <div class="grd2"><input type="number" id=".19" ></div>
+                <div class="grd2"><input type="number" id=".27" ></div>
+                <div class="grd2"><input type="number" id=".28" ></div>
+                <div class="grd2"><input type="number" id=".29" ></div>
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number" id=".31" ></div>
+                <div class="grd2"><input type="number" id=".32" ></div>
+                <div class="grd2"><input type="number" id=".33" ></div>
+                <div class="grd2"><input type="number" id=".41" ></div>
+                <div class="grd2"><input type="number" id=".42" ></div>
+                <div class="grd2"><input type="number" id=".43" ></div>
+                <div class="grd2"><input type="number" id=".51" ></div>
+                <div class="grd2"><input type="number" id=".52" ></div>
+                <div class="grd2"><input type="number" id=".53" ></div>
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number" id=".34" ></div>
+                <div class="grd2"><input type="number" id=".35" ></div>
+                <div class="grd2"><input type="number" id=".36" ></div>
+                <div class="grd2"><input type="number" id=".44" ></div>
+                <div class="grd2"><input type="number" id=".45" ></div>
+                <div class="grd2"><input type="number" id=".46" ></div>
+                <div class="grd2"><input type="number" id=".54" ></div>
+                <div class="grd2"><input type="number" id=".55" ></div>
+                <div class="grd2"><input type="number" id=".56" ></div>
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number"  id=".37" ></div>
+                <div class="grd2"><input type="number"  id=".38" ></div>
+                <div class="grd2"><input type="number"  id=".39" ></div>
+                <div class="grd2"><input type="number"  id=".47" ></div>
+                <div class="grd2"><input type="number"  id=".48" ></div>
+                <div class="grd2"><input type="number"  id=".49" ></div>
+                <div class="grd2"><input type="number"  id=".57" ></div>
+                <div class="grd2"><input type="number"  id=".58" ></div>
+                <div class="grd2"><input type="number"  id=".59" ></div>
+
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number"  id=".61" ></div>
+                <div class="grd2"><input type="number"  id=".62" ></div>
+                <div class="grd2"><input type="number"  id=".63" ></div>
+                <div class="grd2"><input type="number"  id=".71" ></div>
+                <div class="grd2"><input type="number"  id=".72" ></div>
+                <div class="grd2"><input type="number"  id=".73" ></div>
+                <div class="grd2"><input type="number"  id=".81" ></div>
+                <div class="grd2"><input type="number"  id=".82" ></div>
+                <div class="grd2"><input type="number"  id=".83" ></div>
+
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number"  id=".64" ></div>
+                <div class="grd2"><input type="number"  id=".65" ></div>
+                <div class="grd2"><input type="number"  id=".66" ></div>
+                <div class="grd2"><input type="number"  id=".74" ></div>
+                <div class="grd2"><input type="number"  id=".75" ></div>
+                <div class="grd2"><input type="number"  id=".76" ></div>
+                <div class="grd2"><input type="number"  id=".84" ></div>
+                <div class="grd2"><input type="number"  id=".85" ></div>
+                <div class="grd2"><input type="number"  id=".86" ></div>
+
+            </div>
+            <div class="grd1">
+                <div class="grd2"><input type="number"  id=".67" ></div>
+                <div class="grd2"><input type="number"  id=".68" ></div>
+                <div class="grd2"><input type="number"  id=".69" ></div>
+                <div class="grd2"><input type="number"  id=".77" ></div>
+                <div class="grd2"><input type="number"  id=".78" ></div>
+                <div class="grd2"><input type="number"  id=".79" ></div>
+                <div class="grd2"><input type="number"  id=".87" ></div>
+                <div class="grd2"><input type="number"  id=".88" ></div>
+                <div class="grd2"><input type="number"  id=".89" ></div>
+
+            </div>
+        </div> 
+    </div>
+    <div class="btns">
+   <button onclick="reset()"> Reset </button>
+   <button onclick="solver()"> Calculate </button>
+    </div>
+    <div id="error">
+        <span id="err">
+"  "
+        </span>
+    </div>
+    <script src="./sudoku.js"></script>
+
+</body>
+</html>
